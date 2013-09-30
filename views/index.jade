@@ -1,5 +1,15 @@
 extends layout
 
 block content
-	h1= title
-	p Welcome to #{title}
+	div(ng-controller='AppCtrl')
+		//h1 {{data}}
+		//div.row
+		//	div.twelve.columns
+		//
+		//div.row
+		//	div.ten.columns.field
+		//		input.input(type='text')
+		//	div.two.columns
+		//		div.medium.info.btn
+		//			button Submit
+		div(ng-view)
