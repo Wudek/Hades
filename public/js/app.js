@@ -15,6 +15,7 @@ angular.module('myApp', ['myApp.filters', 'myApp.services', 'myApp.directives'])
 	$routeProvider.when('/map', {templateUrl : 'partial/map', controller : MapController});
 	$routeProvider.when('/view1', {templateUrl : 'partial/view1', controller : MyCtrl1});
 	$routeProvider.when('/view2', {templateUrl : 'partial/view2', controller : MyCtrl2});
-	$routeProvider.otherwise({redirectTo : '/map'});
+	$routeProvider.when('/', {templateUrl : 'partial/home', controller : HomeController});
+	$routeProvider.otherwise({redirectTo : '/'});
 	$locationProvider.html5Mode(true);
 }]);
